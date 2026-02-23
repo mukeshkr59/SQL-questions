@@ -2,7 +2,8 @@
 
 ## 🟢 EASY LEVEL (Q1–Q7)
 
-**Q1. What is the difference between DELETE, TRUNCATE, and DROP?
+**Q1. What is the difference between DELETE, TRUNCATE, and DROP?**
+
 "DELETE is a DML command that removes rows one by one based on a WHERE condition, and it can be rolled back because it logs each deletion. TRUNCATE is a DDL command that removes all rows at once — it's faster than DELETE, but you typically can't roll it back in most databases. DROP removes the entire table structure along with its data — the table simply ceases to exist after DROP.
 For example:
 
@@ -12,7 +13,8 @@ TRUNCATE TABLE employees; — wipes all rows instantly.
 DROP TABLE employees; — the table itself is gone."
 ```
 
-Q2. What is a Primary Key and how is it different from a Unique Key?
+**Q2. What is a Primary Key and how is it different from a Unique Key?**
+
 "A Primary Key uniquely identifies every row in a table. It cannot be NULL and a table can have only one Primary Key. A Unique Key also enforces uniqueness, but it can accept one NULL value (in most databases like MySQL and SQL Server), and a table can have multiple Unique Keys.
 Example:
 
