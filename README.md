@@ -206,9 +206,7 @@ WITH RECURSIVE org_chart AS (
   JOIN org_chart o ON e.manager_id = o.id
 )
 SELECT * FROM org_chart;
-``````"
-
----
+```````
 
 **Q13. What is a transaction and what are ACID properties?**
 
@@ -226,9 +224,9 @@ BEGIN TRANSACTION;
   UPDATE accounts SET balance = balance + 500 WHERE id = 2;
 COMMIT;
 -- If anything fails between, ROLLBACK keeps both accounts intact.
-````"
+`````
 
----
+
 
 **Q14. What are different types of indexes — clustered vs non-clustered?**
 
@@ -391,5 +389,3 @@ In modern systems, I often use **both** — a PostgreSQL database for transactio
 | 20 | SQL vs NoSQL | 🔴 Advanced |
 
 ---
-
-Practice delivering these out loud — interviewers are as much evaluating *how clearly you communicate* as whether you know the answer. Good luck!
