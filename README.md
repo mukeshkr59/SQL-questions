@@ -6,7 +6,7 @@ CREATE TABLE users (
   email VARCHAR(100) UNIQUE,      -- can be NULL once
   phone VARCHAR(15) UNIQUE        -- multiple unique keys allowed
 );
-````````"
+````````
 
 
 **Q3. What is a Foreign Key?**
